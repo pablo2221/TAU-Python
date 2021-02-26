@@ -55,7 +55,7 @@ def areaRombo():
 
     while diagonalMayor <= 0 or diagonalMenor <=0:
 
-        print("ERROR: El valor de las diagonales no puede ser negativo o cero")
+        print("El valor de las diagonales no puede ser negativo o cero")
         diagonalMayor = float(input("Ingrese el valor de la Diagonal Mayor del Rombo: "))
         diagonalMenor = float(input("Ingrese el valor de la Diagonal Menor del Rombo: "))
 
@@ -70,7 +70,7 @@ def areaRomboide():
 
     while base <= 0 or altura <=0:
 
-        print("ERROR: El valor de la base o la altura no puede ser negativo o cero")
+        print("El valor de la base o la altura no puede ser negativo o cero")
         base = float(input("Ingrese el valor de la base del romboide: "))
         altura = float(input("Ingrese el valor de la base del romboide: "))
 
@@ -86,7 +86,7 @@ def areaTrapecio():
 
     while baseMayor <= 0 or altura <=0 or baseMayor <=0:
 
-        print("ERROR: El valor de las bases o la altura no puede ser negativo o cero")
+        print("El valor de las bases o la altura no puede ser negativo o cero")
         baseMayor = float(input("Ingrese el valor de la base mayor del trapecio: "))
         baseMenor = float(input("Ingrese el valor de la base menor del trapecio: "))
         altura = float(input("Ingrese el valor de la altura del trapecio: "))
