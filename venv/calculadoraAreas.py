@@ -104,7 +104,7 @@ def arePoligonoRegular():
         numeroLados = float(input("Por favor ingrese el numero de lados del poligono: "))
         longitudLados = float(input("Por favor ingrese la longitud del lado del poligono: "))
 
-    area = ((numeroLados*math.pow(longitudLados, 2))/(4*tan(pi/numeroLados)))
+    area = float((numeroLados*math.pow(longitudLados, 2))/(4*tan(pi/numeroLados)))
     print("El area del Poligono regular de "+str(numeroLados)+" numero de lados es: "+str(area)+"\n")
     return
 
