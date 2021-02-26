@@ -25,7 +25,8 @@ def areaCuadrado():
     lado = float(input("Ingrese el valor del lado del cuadrado: "))
 
     while lado <= 0:
-        lado = float(input("El valor del lado no puede ser negativo ni cero, Por favor, ingrese el valor del lado del cuadrado: "))
+        lado = float(input("El valor del lado no puede ser negativo ni cero, Por favor, ingrese el valor del lado del "
+                           "cuadrado: "))
 
     area = float(math.pow(lado, 2))
     print("El area del cuadrado es: "+str(area)+"\n")
@@ -95,7 +96,9 @@ def areaTrapecio():
 
 
 while calculadoraEncendida:
-    seleccion = input("Digite el numero de una opcion que desea seleccionar: \n \n 1. Area del Circulo \n 2. Area del Cuadrado \n 3. Area del Rectangulo \n 4. Salir \n \n ")
+    seleccion = input("Digite el numero de una opcion que desea seleccionar: \n \n 1. Area del Circulo \n 2. Area del "
+                      "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
+                      "trapecio \n 7. Salir del sistema \n \n ")
     if seleccion == "1":
         areaCirculo()
     elif seleccion == "2":
@@ -103,8 +106,14 @@ while calculadoraEncendida:
     elif seleccion == "3":
         areaRectangulo()
     elif seleccion == "4":
+        areaRombo()
+    elif seleccion == "5":
+        areaRomboide()
+    elif seleccion == "6":
+        areaTrapecio()
+    elif seleccion == "7":
         calculadoraEncendida = False
-        print("Vuelva Pronto")
+        print("Hasta pronto, fue un gusto ayudarte")
     else:
         print("La opcion seleccionada no es correcta.")
 
