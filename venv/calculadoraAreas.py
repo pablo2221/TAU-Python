@@ -18,7 +18,7 @@ def areaCirculo():
         radio = float(input("El valor del radio no puede ser negativo ni cero, Por favor, ingrese el valor del radio del circulo: "))
 
     area = float(math.pi*math.pow(radio, 2))
-    print("El area del circulo es: "+str(area)+"\n")
+    print("El area del circulo es: "+str(area)+" cm2"+"\n")
     return
 
 
@@ -30,7 +30,7 @@ def areaCuadrado():
                            "cuadrado: "))
 
     area = float(math.pow(lado, 2))
-    print("El area del cuadrado es: "+str(area)+"\n")
+    print("El area del cuadrado es: "+str(area)+" cm2"+"\n")
     return
 
 
@@ -45,7 +45,7 @@ def areaRectangulo():
         altura = float(input("Ingrese el valor de la base del rectangulo: "))
 
     area = float((base*altura))
-    print("El area del rectangulo es: "+str(area)+"\n")
+    print("El area del rectangulo es: "+str(area)+" cm2"+"\n")
     return
 
 
@@ -60,7 +60,7 @@ def areaRombo():
         diagonalMenor = float(input("Ingrese el valor de la Diagonal Menor del Rombo: "))
 
     area = float(((diagonalMayor*diagonalMenor)/2))
-    print("El area del Rombo es: "+str(area)+"\n")
+    print("El area del Rombo es: "+str(area)+" cm2"+"\n")
     return
 
 
@@ -75,7 +75,7 @@ def areaRomboide():
         altura = float(input("Ingrese el valor de la base del romboide: "))
 
     area = float((base*altura))
-    print("El area del romboide es: "+str(area)+"\n")
+    print("El area del romboide es: "+str(area)+" cm2"+"\n")
     return
 
 
@@ -92,7 +92,7 @@ def areaTrapecio():
         altura = float(input("Ingrese el valor de la altura del trapecio: "))
 
     area = float((altura*((baseMayor+baseMenor)/2)))
-    print("El area del trapecio es: "+str(area)+"\n")
+    print("El area del trapecio es: "+str(area)+" cm2"+"\n")
     return
 
 def arePoligonoRegular():
@@ -105,7 +105,7 @@ def arePoligonoRegular():
         longitudLados = float(input("Por favor ingrese la longitud del lado del poligono: "))
 
     area = float((numeroLados*math.pow(longitudLados, 2))/(4*tan(pi/numeroLados)))
-    print("El area del Poligono regular de "+str(numeroLados)+" numero de lados es: "+str(area)+"\n")
+    print("El area del Poligono regular de "+str(numeroLados)+" numero de lados es: "+str(area)+" cm2"+"\n")
     return
 
 while calculadoraEncendida:
