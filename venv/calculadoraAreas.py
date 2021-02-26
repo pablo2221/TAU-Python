@@ -1,3 +1,4 @@
+from math import pi, tan
 import math
 from datetime import datetime, date, time, timedelta
 import calendar
@@ -94,11 +95,23 @@ def areaTrapecio():
     print("El area del trapecio es: "+str(area)+"\n")
     return
 
+def arePoligonoRegular():
+    numeroLados = float(input("Por favor ingrese el numero de lados del poligono: "))
+    longitudLados = float(input("Por favor ingrese la longitud del lado del poligono: "))
+
+    while numeroLados <= 0 or longitudLados <= 0:
+        print("Los datos para numero de lados o longitud no pueden ser menores o iguales a cero")
+        numeroLados = float(input("Por favor ingrese el numero de lados del poligono: "))
+        longitudLados = float(input("Por favor ingrese la longitud del lado del poligono: "))
+
+    area = ((numeroLados*math.pow(longitudLados, 2))/(4*tan(pi/numeroLados)))
+    print("El area del Poligono regular de "+str(numeroLados)+" numero de lados es: "+str(area)+"\n")
+    return
 
 while calculadoraEncendida:
     seleccion = input("Digite el numero de una opcion que desea seleccionar: \n \n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
-                      "trapecio \n 7. Salir del sistema \n \n ")
+                      "trapecio \n 7. Area del poligono regular \n 8. Salir del sistema \n \n ")
     if seleccion == "1":
         areaCirculo()
     elif seleccion == "2":
@@ -112,8 +125,11 @@ while calculadoraEncendida:
     elif seleccion == "6":
         areaTrapecio()
     elif seleccion == "7":
+        arePoligonoRegular()
+    elif seleccion == "8":
         calculadoraEncendida = False
         print("Hasta pronto, fue un gusto ayudarte")
+        fechaHora()
     else:
         print("La opcion seleccionada no es correcta.")
 
