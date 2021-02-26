@@ -33,3 +33,6 @@ def hipotenusa(c1,c2):
 
 print("La hipotenusa del triangulo es :", hipotenusa(3,4))
 
+from datetime import datetime, date, time, timedelta
+import calendar
+
