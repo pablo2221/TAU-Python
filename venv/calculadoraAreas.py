@@ -53,7 +53,7 @@ def areaRectangulo():
     while base <= 0 or altura <= 0:
         print("El valor de la base o la altura no puede ser negativo o cero")
         base = float(inputNumber("Ingrese el valor de la base del rectangulo: "))
-        altura = float(inputNumber("Ingrese el valor de la base del rectangulo: "))
+        altura = float(inputNumber("Ingrese el valor de la altura del rectangulo: "))
 
     area = float((base * altura))
     print("El area del rectangulo es: " + str(area) + " cm2" + "\n")
