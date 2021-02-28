@@ -104,7 +104,7 @@ def areaTrapecio():
     return
 
 # Funcion que calcula el area de un poligono regular de X cantidad de lados
-def arePoligonoRegular():
+def areaPoligonoRegular():
     numeroLados = float(inputNumber("Por favor ingrese el numero de lados del poligono: "))
     longitudLados = float(inputNumber("Por favor ingrese la longitud del lado del poligono: "))
 
