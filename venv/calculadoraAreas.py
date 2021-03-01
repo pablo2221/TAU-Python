@@ -142,3 +142,4 @@ while calculadoraEncendida: #calculadoraEncendida funciona con un boolean statem
         fechaHora()
     else:
         print("La opcion seleccionada no es correcta, intente de nuevo.")
+      
