@@ -138,7 +138,7 @@ while calculadoraEncendida: #calculadoraEncendida funciona con un boolean statem
         arePoligonoRegular()
     elif seleccion == "8":
         calculadoraEncendida = False
-        print("Hasta pronto, fue un gusto ayudarte \n")
+        print("Hasta pronto, fue un gusto ayudarle \n")
         fechaHora()
     else:
-        print("La opcion seleccionada no es correcta.")
+        print("La opcion seleccionada no es correcta, intente nuevamente.")
