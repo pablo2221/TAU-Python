@@ -5,6 +5,7 @@ import calendar
 
 calculadoraEncendida = True
 
+
 # funcion que valida que el dato ingresado por el usuario sea un numero flotante
 def inputNumber(mensaje):
     while True:
@@ -16,14 +17,17 @@ def inputNumber(mensaje):
         else:
             return userInput
 
+
 # Funcion para obtener la fecha y hora del sistema
 def fechaHora():
     fecha_hora = datetime.now()
-    print("Fecha: "+fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime("%Y Hora:") + fecha_hora.strftime(" %X") + "\n")
+    print("Fecha: " + fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime(
+        "%Y Hora:") + fecha_hora.strftime(" %X") + "\n")
     return
 
+
 # Funcion que calcula el area de un circulo
-def areaCirculo():
+def area_circulo():
     radio = float(inputNumber("Ingrese el valor del radio del circulo para calcular su area respectiva: "))
     while radio <= 0:
         radio = float(inputNumber(
@@ -34,8 +38,9 @@ def areaCirculo():
     print("El area del circulo es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un cuadrado
-def areaCuadrado():
+def area_cuadrado():
     lado = float(inputNumber("Ingrese el valor del lado del cuadrado para calcular su area: "))
 
     while lado <= 0:
@@ -46,8 +51,9 @@ def areaCuadrado():
     print("El area del cuadrado es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un rectangulo
-def areaRectangulo():
+def area_rectangulo():
     base = float(inputNumber("Ingrese el valor de la base del rectangulo para calcular su area: "))
     altura = float(inputNumber("Ingrese el valor de la altura del rectangulo para calcular su area: "))
 
@@ -60,8 +66,9 @@ def areaRectangulo():
     print("El area del rectangulo es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un rombo
-def areaRombo():
+def area_rombo():
     diagonalMayor = float(inputNumber("Ingrese el valor de la Diagonal Mayor del Rombo para calcular su area: "))
     diagonalMenor = float(inputNumber("Ingrese el valor de la Diagonal Menor del Rombo para calcular su area: "))
 
@@ -74,8 +81,9 @@ def areaRombo():
     print("El area del Rombo es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un romboide
-def areaRomboide():
+def area_romboide():
     base = float(inputNumber("Ingrese el valor de la base del romboide para calcular su area: "))
     altura = float(inputNumber("Ingrese el valor de la altura del romboide para calcular su area: "))
 
@@ -88,8 +96,9 @@ def areaRomboide():
     print("El area del romboide es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un trapecio
-def areaTrapecio():
+def area_trapecio():
     baseMayor = float(inputNumber("Ingrese el valor de la base mayor del trapecio para calcular su area: "))
     baseMenor = float(inputNumber("Ingrese el valor de la base menor del trapecio para calcular su area: "))
     altura = float(inputNumber("Ingrese el valor de la altura del trapecio para calcular su area: "))
@@ -104,44 +113,45 @@ def areaTrapecio():
     print("El area del trapecio es: " + str(area) + " cm2" + "\n")
     return
 
+
 # Funcion que calcula el area de un poligono regular de X cantidad de lados
-def arePoligonoRegular():
+def area_poligono_regular():
     numeroLados = float(inputNumber(" Ingrese el numero de lados del poligono para calcular su area: "))
     longitudLados = float(inputNumber("Ingrese la longitud del lado del poligono para calcular su area: "))
 
     while numeroLados <= 0 or longitudLados <= 0:
         print("ERROR Los datos para numero de lados o longitud no pueden ser menores o iguales a cero")
         numeroLados = float(inputNumber("Por favor ingrese el numero de lados del poligono para calcular su area: "))
-        longitudLados = float(inputNumber("Por favor ingrese la longitud del lado del poligono para calcular su area: "))
+        longitudLados = float(
+            inputNumber("Por favor ingrese la longitud del lado del poligono para calcular su area: "))
 
     area = float((numeroLados * math.pow(longitudLados, 2)) / (4 * tan(pi / numeroLados)))
     print("El area del Poligono regular de " + str(numeroLados) + " lados es: " + str(area) + " cm2" + "\n")
     return
 
 
-while calculadoraEncendida: #calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
+while calculadoraEncendida:  # calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
     seleccion = input("En el siguiente Menu, seleccione la opcion que desea calcular para las figuras geométricas: \n "
                       "\n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
                       "trapecio \n 7. Area del poligono regular \n 8. Salir del sistema \n \n ")
     if seleccion == "1":
-        areaCirculo()
+        area_circulo()
     elif seleccion == "2":
-        areaCuadrado()
+        area_cuadrado()
     elif seleccion == "3":
-        areaRectangulo()
+        area_rectangulo()
     elif seleccion == "4":
-        areaRombo()
+        area_rombo()
     elif seleccion == "5":
-        areaRomboide()
+        area_romboide()
     elif seleccion == "6":
-        areaTrapecio()
+        area_trapecio()
     elif seleccion == "7":
-        arePoligonoRegular()
+        area_poligono_regular()
     elif seleccion == "8":
         calculadoraEncendida = False
         print("Hasta pronto, fue un gusto ayudarle. \n")
         fechaHora()
     else:
         print("La opcion seleccionada no es correcta, intente de nuevo.")
-      
