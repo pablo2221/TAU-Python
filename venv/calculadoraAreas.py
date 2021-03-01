@@ -27,7 +27,8 @@ def areaCirculo():
     radio = float(inputNumber("Ingrese el valor del radio del circulo para calcular su area respectiva: "))
     while radio <= 0:
         radio = float(inputNumber(
-            "ERROR El valor del radio no puede ser negativo ni cero. Por favor ingrese el valor del radio del circulo para calcular su area respectiva: "))
+            "ERROR El valor del radio no puede ser negativo ni cero. Por favor ingrese el valor del radio del circulo "
+            "para calcular su area respectiva: "))
 
     area = float(math.pi * math.pow(radio, 2))
     print("El area del circulo es: " + str(area) + " cm2" + "\n")
@@ -119,7 +120,8 @@ def arePoligonoRegular():
 
 
 while calculadoraEncendida: #calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
-    seleccion = input("En el siguiente Menu, seleccione la opcion que desea calcular para las figuras geométricas: \n \n 1. Area del Circulo \n 2. Area del "
+    seleccion = input("En el siguiente Menu, seleccione la opcion que desea calcular para las figuras geométricas: \n "
+                      "\n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
                       "trapecio \n 7. Area del poligono regular \n 8. Salir del sistema \n \n ")
     if seleccion == "1":
