@@ -27,7 +27,7 @@ def areaCirculo():
     radio = float(inputNumber("Ingrese el valor del radio del circulo para calcular su area respectiva: "))
     while radio <= 0:
         radio = float(inputNumber(
-            "ERROR El valor del radio no puede ser negativo ni cero. Porfavor ingrese el valor del radio del circulo para calcular su area respectiva: "))
+            "ERROR El valor del radio no puede ser negativo ni cero. Por favor ingrese el valor del radio del circulo para calcular su area respectiva: "))
 
     area = float(math.pi * math.pow(radio, 2))
     print("El area del circulo es: " + str(area) + " cm2" + "\n")
@@ -53,7 +53,7 @@ def areaRectangulo():
     while base <= 0 or altura <= 0:
         print("ERROR El valor de la base o la altura no puede ser negativo o cero")
         base = float(inputNumber("Ingrese el valor de la base del rectangulo para calcular su area: "))
-        altura = float(inputNumber("Ingrese el valor de la base del rectangulo para calcular su area: "))
+        altura = float(inputNumber("Ingrese el valor de la altura del rectangulo para calcular su area: "))
 
     area = float((base * altura))
     print("El area del rectangulo es: " + str(area) + " cm2" + "\n")
