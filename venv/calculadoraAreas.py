@@ -19,7 +19,6 @@ def inputNumber(mensaje):
 # Funcion para obtener la fecha y hora del sistema
 def fechaHora():
     fecha_hora = datetime.now()
-
     print("Fecha y hora: "+fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime("%Y") + fecha_hora.strftime(" %X") + "\n")
     return
 
