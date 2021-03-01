@@ -3,7 +3,7 @@ import math
 from datetime import datetime, date, time, timedelta
 import calendar
 
-calculadoraEncendida = True
+calculadora_encendida = True
 
 
 # funcion que valida que el dato ingresado por el usuario sea un numero flotante
@@ -44,8 +44,7 @@ def area_cuadrado():
     lado = float(inputNumber("Ingrese el valor del lado del cuadrado para calcular su area: "))
 
     while lado <= 0:
-        lado = float(inputNumber("ERROR El valor del lado no puede ser negativo ni cero. Porfavor ingrese el valor del "
-                                 "lado del cuadrado: "))
+        lado = float(inputNumber("ERROR El valor del lado no puede ser negativo ni cero. Porfavor ingrese el valor del lado del cuadrado: "))
 
     area = float(math.pow(lado, 2))
     print("El area del cuadrado es: " + str(area) + " cm2" + "\n")
@@ -122,15 +121,14 @@ def area_poligono_regular():
     while numeroLados <= 0 or longitudLados <= 0:
         print("ERROR Los datos para numero de lados o longitud no pueden ser menores o iguales a cero")
         numeroLados = float(inputNumber("Por favor ingrese el numero de lados del poligono para calcular su area: "))
-        longitudLados = float(
-            inputNumber("Por favor ingrese la longitud del lado del poligono para calcular su area: "))
+        longitudLados = float(inputNumber("Por favor ingrese la longitud del lado del poligono para calcular su area: "))
 
     area = float((numeroLados * math.pow(longitudLados, 2)) / (4 * tan(pi / numeroLados)))
     print("El area del Poligono regular de " + str(numeroLados) + " lados es: " + str(area) + " cm2" + "\n")
     return
 
 
-while calculadoraEncendida:  # calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
+while calculadora_encendida:  # calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
     seleccion = input("En el siguiente Menu, seleccione la opcion que desea calcular para las figuras geométricas: \n "
                       "\n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
@@ -150,7 +148,7 @@ while calculadoraEncendida:  # calculadoraEncendida funciona con un boolean stat
     elif seleccion == "7":
         area_poligono_regular()
     elif seleccion == "8":
-        calculadoraEncendida = False
+        calculadora_encendida = False
         print("Hasta pronto, fue un gusto ayudarle. \n")
         fechaHora()
     else:
