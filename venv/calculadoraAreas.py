@@ -22,7 +22,7 @@ def inputNumber(mensaje):
 def fechaHora():
     fecha_hora = datetime.now()
     print("Fecha: " + fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime(
-        "%Y Hora:") + fecha_hora.strftime(" %X") + "\n")
+        "%Y \nHora:") + fecha_hora.strftime(" %X") + "\n")
     return
 
 
