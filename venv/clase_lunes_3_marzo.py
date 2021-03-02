@@ -47,3 +47,8 @@ def seleccion_menu(opcion, lista):
         rango_nota(lista)
     elif(opcion==5):
         eliminar_nota(lista)
+    else:
+        print("Opcion invalida")
+
+
+seleccion_menu(1,[45,34,67,89,87,67,67,67])
