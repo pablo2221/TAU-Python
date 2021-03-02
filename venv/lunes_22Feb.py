@@ -1,4 +1,4 @@
-"""#ejemplo 1: pregunta numero a usuario hasta que ingresa el valor cero
+#ejemplo 1: pregunta numero a usuario hasta que ingresa el valor cero
 
 num = None
 while (num != 0):
@@ -33,7 +33,6 @@ for letra in palabra:
 for i in range (1,10,2):
     print(i)
 
-"""
 # pide 10 numeros y suma los impares ingresados
 
 acumulador = 0

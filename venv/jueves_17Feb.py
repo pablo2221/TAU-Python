@@ -3,7 +3,7 @@ Practicas del Jueves 18 de Febrero curso de introduccion a la programacion con P
 """
 
 """ejemplo 1"""
-"""
+
 x = int(input("Ingrese un numero: "))
 
 if (x%2 == 0):
@@ -80,7 +80,7 @@ elif (precio_unitario >= 50000 and precio_unitario <=150000):
     print("El precio del articulo era {} pero el nuevo precio con un 10% de descuento es: ".format(precio_unitario) + str(precio_unitario - (precio_unitario * 0.01)))
 elif (precio_unitario > 150000):
     print("El precio del articulo era {} pero el nuevo precio con un 15% de descuento es: ".format(precio_unitario) + str(precio_unitario - (precio_unitario * 0.015)))
-"""
+
 #ejercicio 6
 
 letra = str(input("Ingrese una letra del alfabeto: "))

@@ -19,7 +19,7 @@ def inputNumber(mensaje):
 
 
 # Funcion para obtener la fecha y hora del sistema
-def fechaHora():
+def fecha_hora_sistema():
     fecha_hora = datetime.now()
     print("Fecha: " + fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime(
         "%Y \nHora:") + fecha_hora.strftime(" %X") + "\n")
@@ -150,6 +150,6 @@ while calculadora_encendida:  # calculadoraEncendida funciona con un boolean sta
     elif seleccion == "8":
         calculadora_encendida = False
         print("Hasta pronto, fue un gusto ayudarle. \n")
-        fechaHora()
+        fecha_hora_sistema()
     else:
         print("La opcion seleccionada no es correcta, intente de nuevo.")
