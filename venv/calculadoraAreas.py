@@ -22,7 +22,7 @@ def inputNumber(mensaje):
 def fecha_hora_sistema():
     fecha_hora = datetime.now()
     print("Fecha: " + fecha_hora.strftime("%d-") + fecha_hora.strftime("%m-") + fecha_hora.strftime(
-        "%Y \nHora:") + fecha_hora.strftime(" %X") + "\n")
+        "%Y \nHora:") + fecha_hora.strftime(" %X"))
     return
 
 
@@ -129,6 +129,7 @@ def area_poligono_regular():
 
 
 while calculadora_encendida:  # calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
+    fecha_hora_sistema()
     seleccion = input("En el siguiente Menu, digite el numero de la opcion a la que desea calcular su area: \n "
                       "\n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
@@ -150,6 +151,5 @@ while calculadora_encendida:  # calculadoraEncendida funciona con un boolean sta
     elif seleccion == "8":
         calculadora_encendida = False
         print("Hasta pronto, fue un gusto ayudarle. \n")
-        fecha_hora_sistema()
     else:
         print("La opcion seleccionada no es correcta, intente de nuevo.")

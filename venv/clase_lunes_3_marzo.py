@@ -1,4 +1,4 @@
-# Ejemplo 4: Escriba un program que permita llenar una lista de 9 alumnos de un curso de programacion, el programa
+"""# Ejemplo 4: Escriba un program que permita llenar una lista de 9 alumnos de un curso de programacion, el programa
 # debe permitir agregar un alumno pero antes verifique si ese alumno existe, si no existe se agrega
 
 alumnos = ["Pablo", "Andres", "Ana", "Carlos", "Pedro", "Luis", "Maria", "Andrea", "Juna"]
@@ -14,3 +14,36 @@ else:
 print("La nueva lisga de alumnos es: \n")
 print("============================================= \n")
 print(alumnos)
+
+# Practica: Escriba un programa que almacena una lista las notas finales de 15 alumnos de un curso de matematicas. El
+# programa debe: calcular el promedio de las notas del curso, obtener la nota mayor, obtener la nota menor,
+# El rango de notas, eliminar una nota del curso
+"""
+def promedio_notas(lista):
+    print("El promedio de notas de los alumnos del curso es: "+str(sum(lista)/len(lista))+"\n")
+
+def nota_mayor(lista):
+    print("La nota mas alta del curso es: "+str(max(lista))+"\n")
+
+def nota_menor(lista):
+    print("La nota mas baja del curso es: "+str(min(lista))+"\n")
+
+def rango_nota(lista):
+    print("El rango de notas del curso es de: "+str(max(lista)-min(lista))+"\n")
+
+def eliminar_nota(lista):
+    dato=float(input("De la lista de notas, ingrese la nota a eliminar \n"))
+    lista.remove(dato)
+    print("Ahora la lista se muestra de la siguiente forma: "+str(lista)+"\n")
+
+def seleccion_menu(opcion, lista):
+    if(opcion==1):
+        promedio_notas(lista)
+    elif(opcion==2):
+        nota_mayor(lista)
+    elif(opcion==3):
+        nota_menor(lista)
+    elif(opcion==4):
+        rango_nota(lista)
+    elif(opcion==5):
+        eliminar_nota(lista)
