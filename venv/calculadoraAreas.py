@@ -129,7 +129,7 @@ def area_poligono_regular():
 
 
 while calculadora_encendida:  # calculadoraEncendida funciona con un boolean statement para identificar si me salgo o no del sistema
-    seleccion = input("En el siguiente Menu, seleccione la opcion que desea calcular para las figuras geométricas: \n "
+    seleccion = input("En el siguiente Menu, digite el numero de la opcion a la que desea calcular su area: \n "
                       "\n 1. Area del Circulo \n 2. Area del "
                       "Cuadrado \n 3. Area del Rectangulo \n 4. Area del Rombo \n 5. Area del Romboide \n 6. Area del "
                       "trapecio \n 7. Area del poligono regular \n 8. Salir del sistema \n \n ")
