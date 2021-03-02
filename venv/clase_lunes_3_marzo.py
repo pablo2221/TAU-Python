@@ -1,4 +1,4 @@
-"""# Ejemplo 4: Escriba un program que permita llenar una lista de 9 alumnos de un curso de programacion, el programa
+# Ejemplo 4: Escriba un program que permita llenar una lista de 9 alumnos de un curso de programacion, el programa
 # debe permitir agregar un alumno pero antes verifique si ese alumno existe, si no existe se agrega
 
 alumnos = ["Pablo", "Andres", "Ana", "Carlos", "Pedro", "Luis", "Maria", "Andrea", "Juna"]
@@ -18,7 +18,8 @@ print(alumnos)
 # Practica: Escriba un programa que almacena una lista las notas finales de 15 alumnos de un curso de matematicas. El
 # programa debe: calcular el promedio de las notas del curso, obtener la nota mayor, obtener la nota menor,
 # El rango de notas, eliminar una nota del curso
-"""
+
+
 def promedio_notas(lista):
     print("El promedio de notas de los alumnos del curso es: "+str(sum(lista)/len(lista))+"\n")
 
@@ -49,6 +50,5 @@ def seleccion_menu(opcion, lista):
         eliminar_nota(lista)
     else:
         print("Opcion invalida")
-
 
 seleccion_menu(1,[45,34,67,89,87,67,67,67])
