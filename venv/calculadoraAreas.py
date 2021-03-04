@@ -115,7 +115,7 @@ def area_trapecio():
 
 # Funcion que calcula el area de un poligono regular de X cantidad de lados
 def area_poligono_regular():
-    numeroLados = float(inputNumber(" Ingrese el numero de lados del poligono para calcular su area: "))
+    numeroLados = float(inputNumber("Ingrese el numero de lados del poligono para calcular su area: "))
     longitudLados = float(inputNumber("Ingrese la longitud del lado del poligono para calcular su area: "))
 
     while numeroLados <= 0 or longitudLados <= 0:
