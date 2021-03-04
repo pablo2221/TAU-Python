@@ -102,7 +102,7 @@ def area_trapecio():
     baseMenor = float(inputNumber("Ingrese el valor de la base menor del trapecio para calcular su area: "))
     altura = float(inputNumber("Ingrese el valor de la altura del trapecio para calcular su area: "))
 
-    while baseMayor <= 0 or altura <= 0 or baseMayor <= 0:
+    while baseMayor <= 0 or altura <= 0 or baseMenor <= 0:
         print("ERROR El valor de las bases o la altura no puede ser negativo o cero")
         baseMayor = float(inputNumber("Ingrese el valor de la base mayor del trapecio para calcular su area: "))
         baseMenor = float(inputNumber("Ingrese el valor de la base menor del trapecio para calcular su area: "))
