@@ -35,7 +35,7 @@ def area_circulo():
             "para calcular su area respectiva: "))
 
     area = float(math.pi * math.pow(radio, 2))
-    print("El area del circulo es: " + str(area) + " cm2" + "\n" +"==========================================================================")
+    print("El area del circulo es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -47,7 +47,7 @@ def area_cuadrado():
         lado = float(inputNumber("ERROR El valor del lado no puede ser negativo ni cero. Porfavor ingrese el valor del lado del cuadrado: "))
 
     area = float(math.pow(lado, 2))
-    print("El area del cuadrado es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del cuadrado es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -62,7 +62,7 @@ def area_rectangulo():
         altura = float(inputNumber("Ingrese el valor de la altura del rectangulo para calcular su area: "))
 
     area = float((base * altura))
-    print("El area del rectangulo es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del rectangulo es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -77,7 +77,7 @@ def area_rombo():
         diagonalMenor = float(inputNumber("Ingrese el valor de la Diagonal Menor del Rombo para calcular su area: "))
 
     area = float(((diagonalMayor * diagonalMenor) / 2))
-    print("El area del Rombo es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del Rombo es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -92,7 +92,7 @@ def area_romboide():
         altura = float(inputNumber("Ingrese el valor de la altura del romboide para calcular su area: "))
 
     area = float((base * altura))
-    print("El area del romboide es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del romboide es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -109,7 +109,7 @@ def area_trapecio():
         altura = float(inputNumber("Ingrese el valor de la altura del trapecio para calcular su area: "))
 
     area = float((altura * ((baseMayor + baseMenor) / 2)))
-    print("El area del trapecio es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del trapecio es: " + str(area) + " cm2" + "\n")
     return
 
 
@@ -124,7 +124,7 @@ def area_poligono_regular():
         longitudLados = float(inputNumber("Por favor ingrese la longitud del lado del poligono para calcular su area: "))
 
     area = float((numeroLados * math.pow(longitudLados, 2)) / (4 * tan(pi / numeroLados)))
-    print("El area del Poligono regular de " + str(numeroLados) + " lados es: " + str(area) + " cm2" + "\n"+"==========================================================================")
+    print("El area del Poligono regular de " + str(numeroLados) + " lados es: " + str(area) + " cm2" + "\n")
     return
 
 
